@@ -1,3 +1,7 @@
+/**
+ * Count downtime
+ * @type {number}
+ */
 // Set the date and time you're counting down to
 var countDownDate = new Date("Nov 01, 2024 23:59:59").getTime();
 
@@ -29,7 +33,10 @@ var x = setInterval(function () {
     document.getElementById("seconds").innerHTML = "0";
   }
 }, 1000);
-screen.orientation.lock();
+
+/**
+ * Switch favicon dark and light mode
+ */
 $(document).ready(function () {
   if (!window.matchMedia)
     return;
@@ -49,3 +56,18 @@ $(document).ready(function () {
     swap();
   });
 });
+
+/**
+ * Lock orientation
+ */
+// Check if the orientation API is available
+if (screen.orientation && screen.orientation.lock) {
+  // Lock orientation to landscape or portrait
+  screen.orientation.lock("portrait") // or "landscape"
+    .then(() => {
+      console.log("Orientation locked");
+    })
+    .catch((err) => {
+      console.error("Orientation lock failed:", err);
+    });
+}
