@@ -888,7 +888,7 @@
     }
 
     .framer-body-augiA20Il-framer-MWOnB {
-        background: white
+        background: #212121
     }
 
     .framer-MWOnB.framer-72rtr7 {
@@ -943,7 +943,7 @@
         top: 108px;
         transform: translate(-50%);
         width: 568px;
-        z-index: 1
+        z-index: 99999
     }
 
     .framer-MWOnB .framer-u4k58b {
@@ -1477,6 +1477,9 @@
             opacity: 1;
         }
     }
+    #main {
+        min-height: 800px;
+    }
     </style>
 </head>
 <body class="framer-body-augiA20Il-framer-MWOnB">
@@ -1696,7 +1699,7 @@
                             class="framer-text">You can still contact us at:<span
                             style="--framer-text-color:rgb(255, 255, 255)" class="framer-text"> </span><span
                             style="--font-selector:R0Y7Um9ib3RvLTUwMA==;--framer-font-weight:500;--framer-text-color:rgb(255, 255, 255)"
-                            class="framer-text">contact@innogenes.com  </span>for any inquiries.</p></div>
+                            class="framer-text"><a href="mailto:contact@innogenes.com">contact@innogenes.com</a> </span>for any inquiries.</p></div>
                     </div>
                 </div>
             </div>
@@ -1770,6 +1773,7 @@
       document.getElementById("seconds").innerHTML = "0";
     }
   }, 1000);
+  screen.orientation.lock();
 </script>
 <div id="svg-templates"
      style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict"
