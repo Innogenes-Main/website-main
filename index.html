@@ -14,9 +14,10 @@
     <meta name="description" content="InnoGenes.com">
     <meta name="framer-search-index"
           content="https://framerusercontent.com/sites/1OvO0XVityffx0WiFc8Y3k/searchIndex-cQPwzKf_zgsn.json">
-    <link href="favicon.ico" rel="icon"
-          type="image/x-icon"
-          media="(prefers-color-scheme: light)">
+    <link href="assets/logo/favicon-light.svg?light" rel="icon" type="image/svg+xml"
+          media="(prefers-color-scheme:light)">
+    <link href="assets/logo/favicon-dark.svg?dark" rel="icon" type="image/svg+xml"
+          media="(prefers-color-scheme:dark)">
     <link rel="apple-touch-icon" href="https://framerusercontent.com/sites/icons/default-touch-icon.v3.png">
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -1695,11 +1696,11 @@
                              data-framer-name="You can still contact us at: contact@innogenes.com for any inquiries."
                              style="outline:none;display:flex;flex-direction:column;justify-content:flex-start;flex-shrink:0;transform:none"
                              data-framer-component-type="RichTextContainer"><p
-                            style="--font-selector:R0Y7Um9ib3RvLXJlZ3VsYXI=;--framer-font-family:&quot;Roboto&quot;, &quot;Roboto Placeholder&quot;, sans-serif;--framer-line-height:24px;--framer-text-color:rgb(151, 151, 151)"
+                            style="text-align: center;--font-selector:R0Y7Um9ib3RvLXJlZ3VsYXI=;--framer-font-family:&quot;Roboto&quot;, &quot;Roboto Placeholder&quot;, sans-serif;--framer-line-height:24px;--framer-text-color:rgb(151, 151, 151)"
                             class="framer-text">You can still contact us at:<span
                             style="--framer-text-color:rgb(255, 255, 255)" class="framer-text"> </span><span
                             style="--font-selector:R0Y7Um9ib3RvLTUwMA==;--framer-font-weight:500;--framer-text-color:rgb(255, 255, 255)"
-                            class="framer-text"><a href="mailto:contact@innogenes.com">contact@innogenes.com</a> </span>for any inquiries.</p></div>
+                            class="framer-text"><a style="color: #5BC4BD;" href="mailto:contact@innogenes.com">contact@innogenes.com</a> </span>for any inquiries.</p></div>
                     </div>
                 </div>
             </div>
@@ -1741,40 +1742,8 @@
 <script data-framer-appear-animation="no-preference"></script>
 <script type="module" async="" data-framer-bundle="main" fetchpriority="low"
         src="./assets/script_main.A2XAWI44.mjs"></script>
-<script type="text/javascript">
-  // Set the date and time you're counting down to
-  var countDownDate = new Date("Nov 01, 2024 23:59:59").getTime();
-
-  // Update the countdown every 1 second
-  var x = setInterval(function () {
-    var now = new Date().getTime();
-
-    // Find the difference between now and the countdown date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes, and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Output the results in the relevant HTML elements
-    document.getElementById("days").innerHTML = days;
-    document.getElementById("hours").innerHTML = hours;
-    document.getElementById("minutes").innerHTML = minutes;
-    document.getElementById("seconds").innerHTML = seconds;
-
-    // If the countdown is finished, display some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("days").innerHTML = "0";
-      document.getElementById("hours").innerHTML = "0";
-      document.getElementById("minutes").innerHTML = "0";
-      document.getElementById("seconds").innerHTML = "0";
-    }
-  }, 1000);
-  screen.orientation.lock();
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="./assets/script.js"></script>
 <div id="svg-templates"
      style="position: absolute; overflow: hidden; bottom: 0; left: 0; width: 0; height: 0; z-index: 0; contain: strict"
      aria-hidden="true">
