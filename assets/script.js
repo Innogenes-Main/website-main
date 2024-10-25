@@ -56,18 +56,3 @@ $(document).ready(function () {
     swap();
   });
 });
-
-/**
- * Lock orientation
- */
-// Check if the orientation API is available
-if (screen.orientation && screen.orientation.lock) {
-  // Lock orientation to landscape or portrait
-  screen.orientation.lock("portrait") // or "landscape"
-    .then(() => {
-      console.log("Orientation locked");
-    })
-    .catch((err) => {
-      console.error("Orientation lock failed:", err);
-    });
-}
