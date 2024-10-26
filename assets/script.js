@@ -13,24 +13,32 @@ var x = setInterval(function () {
   var distance = countDownDate - now;
 
   // Time calculations for days, hours, minutes, and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  var days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+  var hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+  var minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+  var seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
 
   // Output the results in the relevant HTML elements
-  document.getElementById("days").innerHTML = days;
-  document.getElementById("hours").innerHTML = hours;
-  document.getElementById("minutes").innerHTML = minutes;
-  document.getElementById("seconds").innerHTML = seconds;
+  document.getElementById("days-1").innerHTML = days;
+  document.getElementById("hours-1").innerHTML = hours;
+  document.getElementById("minutes-1").innerHTML = minutes;
+  document.getElementById("seconds-1").innerHTML = seconds;
+  document.getElementById("days-2").innerHTML = days;
+  document.getElementById("hours-2").innerHTML = hours;
+  document.getElementById("minutes-2").innerHTML = minutes;
+  document.getElementById("seconds-2").innerHTML = seconds;
 
   // If the countdown is finished, display some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("days").innerHTML = "0";
-    document.getElementById("hours").innerHTML = "0";
-    document.getElementById("minutes").innerHTML = "0";
-    document.getElementById("seconds").innerHTML = "0";
+    document.getElementById("days-1").innerHTML = "0";
+    document.getElementById("hours-1").innerHTML = "0";
+    document.getElementById("minutes-1").innerHTML = "0";
+    document.getElementById("seconds-1").innerHTML = "0";
+    document.getElementById("days-2").innerHTML = "0";
+    document.getElementById("hours-2").innerHTML = "0";
+    document.getElementById("minutes-2").innerHTML = "0";
+    document.getElementById("seconds-2").innerHTML = "0";
   }
 }, 1000);
 
